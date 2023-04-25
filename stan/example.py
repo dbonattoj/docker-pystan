@@ -31,7 +31,7 @@ fit = posterior.sample(num_chains=4, num_samples=1000)
 
 eta = fit["eta"]  # array with shape (8, 4000)
 theta = fit["theta"]
--+
+
 print("Plot the posterior distribution of f")
 fig, ax = plt.subplots()
 ax.hist(theta[0], bins=50)
